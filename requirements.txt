@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+python-dotenv
+
+# DB
+sqlalchemy
+psycopg2-binary
+pgvector
+
+# Redis
+redis
+
+# LLM + embeddings
+openai
+
+# File handling
+pypdf
+
+# Utils
+tiktoken

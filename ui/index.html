@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Copilot</title>
+    <meta name="description" content="AI Support Copilot - Your intelligent assistant">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon"></div>
+                <h2>AI Copilot</h2>
+            </div>
+            
+            <div class="upload-section">
+                <h3>Knowledge Base</h3>
+                <p>Upload a document to expand the AI's memory and knowledge.</p>
+                <form id="upload-form">
+                    <label for="file-upload" class="custom-file-upload">
+                        Choose File
+                    </label>
+                    <input id="file-upload" type="file" required />
+                    <button type="submit" id="upload-btn">Upload</button>
+                </form>
+                <div id="upload-status"></div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="session-info">Session ID: <span id="session-display"></span></div>
+            </header>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message system-message">
+                    <div class="avatar">AI</div>
+                    <div class="message-content">
+                        Hello! I am your AI Support Copilot. Ask me a question, or ask me to <b>summarize</b> or <b>extract action items</b> from the database.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Type your message here..." autocomplete="off">
+                    <button type="submit" id="send-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

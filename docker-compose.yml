@@ -1,0 +1,19 @@
+services:
+  db:
+    image: ankane/pgvector:latest
+    restart: always
+    environment:
+      POSTGRES_DB: ai_copilot
+      POSTGRES_USER: ai_user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379" 
+
+volumes:
+  pgdata:
