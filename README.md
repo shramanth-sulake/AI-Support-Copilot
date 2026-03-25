@@ -90,8 +90,3 @@ python -m http.server 3000
 Visit `http://localhost:3000` to interact with the finished product!
 
 ---
-
-## 👨‍💻 Why Hire Me?
-This architecture proves that I don't just know how to call an API. I deeply understand how to orchestrate **microservices (FastAPI)**, map advanced schemas leveraging **Relational + Vector structures (PostgreSQL)**, maintain high-concurrency state via **in-memory caching (Redis)**, build **intelligent agent flows**, and ship an incredible, frictionless User Experience.
-
-I adapt fast, build scalable systems, and understand the intricate bridge between classic standard Software Engineering and modern Applied Machine Learning. **Let's build something incredible together.**
